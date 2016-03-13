@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="http://cdn.bootcss.com/reveal.js/3.2.0/css/reveal.css">
-<link rel="stylesheet" href="http://cdn.bootcss.com/reveal.js/3.2.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.2.0/css/reveal.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.2.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.bootcss.com/reveal.js/3.2.0/css/print/pdf.css';
+        link.href = '//cdn.bootcss.com/reveal.js/3.2.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="http://cdn.bootcss.com/reveal.js/3.2.0/lib/js/html5shiv.js"></script>
+<script src="//cdn.bootcss.com/reveal.js/3.2.0/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -243,6 +243,8 @@ a.anchor-link {
 
 </head>
 
+
+
 <body>
 <div class="reveal">
 <div class="slides">
@@ -315,8 +317,8 @@ require(
       waitSeconds: 15
     },
     [
-      "http://cdn.bootcss.com/reveal.js/3.2.0/lib/js/head.min.js",
-      "http://cdn.bootcss.com/reveal.js/3.2.0/js/reveal.js"
+      "//cdn.bootcss.com/reveal.js/3.2.0/lib/js/head.min.js",
+      "//cdn.bootcss.com/reveal.js/3.2.0/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -332,9 +334,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "http://cdn.bootcss.com/reveal.js/3.2.0/lib/js/classList.js",
+                { src: "//cdn.bootcss.com/reveal.js/3.2.0/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "http://cdn.bootcss.com/reveal.js/3.2.0/plugin/notes/notes.js",
+                { src: "//cdn.bootcss.com/reveal.js/3.2.0/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
@@ -360,5 +362,62 @@ require(
 </script>
 
 </body>
+
+
+<script>
+
+Reveal.initialize({
+
+    // Display controls in the bottom right corner
+    //controls: true,
+
+    // Display a presentation progress bar
+    //progress: true,
+
+    // Push each slide change to the browser history
+    //history: false,
+
+    // Enable keyboard shortcuts for navigation
+    //keyboard: true,
+
+    // Enable touch events for navigation
+    //touch: true,
+
+    // Enable the slide overview mode
+    //overview: true,
+
+    // Vertical centering of slides
+    //center: true,
+
+    // Loop the presentation
+    //loop: false,
+
+    // Change the presentation direction to be RTL
+    //rtl: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    //autoSlide: 0,
+
+    // Enable slide navigation via mouse wheel
+    //mouseWheel: false,
+
+    // Transition style
+    transition: 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Transition speed
+    //transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page backgrounds
+    //backgroundTransition: 'default', // default/linear/none
+
+    // Theme
+    theme: 'sky' // available themes are in /css/theme
+
+});
+
+</script>
+
 
 </html>
