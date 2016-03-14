@@ -48,6 +48,12 @@
 
 <script src="//cdn.bootcss.com/require.js/2.1.10/require.min.js"></script>
 <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+{% for css in resources.inlining.css -%}
+    <style type="text/css">
+    {{ css }}
+    </style>
+{% endfor %}
+
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="{{resources.reveal.url_prefix}}/css/reveal.css">
@@ -74,12 +80,6 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Get Font-awesome from cdn -->
 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.css">
-
-{% for css in resources.inlining.css -%}
-    <style type="text/css">
-    {{ css }}
-    </style>
-{% endfor %}
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
