@@ -217,7 +217,7 @@ require(
 );
 
 </script>
-
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=39210186" charset="UTF-8"></script>
 </body>
 {% endblock body %}
 
