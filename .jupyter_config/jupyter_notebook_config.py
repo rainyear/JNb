@@ -152,7 +152,7 @@ c.NotebookApp.enable_mathjax = True
 # c.NotebookApp.ignore_minified_js = False
 
 # The IP address the notebook server will listen on.
-c.NotebookApp.ip = 'ml.rainy.im'
+c.NotebookApp.ip = 'nb.rainy.im'
 
 # Supply extra arguments that will be passed to Jinja environment.
 # c.NotebookApp.jinja_environment_options = {}
