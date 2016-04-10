@@ -307,10 +307,10 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">graphviz</span> <span class="k">import</span> <span class="n">Digraph</span> <span class="k">as</span> <span class="n">Graph</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">graphviz</span> <span class="k">import</span> <span class="n">Graph</span>
 
 <span class="k">class</span> <span class="nc">Tree</span><span class="p">(</span><span class="n">_Tree</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -369,9 +369,18 @@ a.anchor-link {
 </div>
 
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#21019;&#24314;&#20108;&#21449;&#26641;">&#21019;&#24314;&#20108;&#21449;&#26641;<a class="anchor-link" href="#&#21019;&#24314;&#20108;&#21449;&#26641;">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">build_tree</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">leaf</span><span class="o">=</span><span class="s2">&quot;@&quot;</span><span class="p">):</span>
@@ -386,28 +395,7 @@ a.anchor-link {
     <span class="n">root</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">build_tree</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
     <span class="n">root</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">build_tree</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">root</span>   
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#32472;&#21046;&#26641;">&#32472;&#21046;&#26641;<a class="anchor-link" href="#&#32472;&#21046;&#26641;">&#182;</a></h3>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">tree</span> <span class="o">=</span> <span class="n">build_tree</span><span class="p">([</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">build_tree</span><span class="p">([</span>
         <span class="s1">&#39;+&#39;</span><span class="p">,</span>
             <span class="s1">&#39;+&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;@&#39;</span><span class="p">,</span> <span class="s1">&#39;@&#39;</span><span class="p">,</span>
@@ -421,7 +409,28 @@ a.anchor-link {
                         <span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;@&#39;</span><span class="p">,</span><span class="s1">&#39;@&#39;</span><span class="p">,</span>
                     <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;@&#39;</span><span class="p">,</span> <span class="s1">&#39;@&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;g&#39;</span><span class="p">])</span>
-<span class="n">graph</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#32472;&#21046;&#26641;">&#32472;&#21046;&#26641;<a class="anchor-link" href="#&#32472;&#21046;&#26641;">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">graph</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 <span class="n">graph</span>
 </pre></div>
 
@@ -433,7 +442,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[77]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[90]:</div>
 
 <div class="output_svg output_subarea output_execute_result">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -447,130 +456,118 @@ a.anchor-link {
 <g id="graph0" class="graph" transform="scale(0.86747 0.86747) rotate(0) translate(4 328)">
 <title>Tree</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-328 202,-328 202,4 -4,4"/>
-<!-- 140295241580216 -->
-<g id="node1" class="node"><title>140295241580216</title>
+<!-- 140295241475968 -->
+<g id="node1" class="node"><title>140295241475968</title>
 <ellipse fill="none" stroke="black" cx="99" cy="-306" rx="18" ry="18"/>
 <text text-anchor="middle" x="99" y="-302.3" font-family="Times,serif" font-size="14.00">+</text>
 </g>
-<!-- 140295241576856 -->
-<g id="node2" class="node"><title>140295241576856</title>
+<!-- 140295241477312 -->
+<g id="node2" class="node"><title>140295241477312</title>
 <ellipse fill="none" stroke="black" cx="72" cy="-234" rx="18" ry="18"/>
 <text text-anchor="middle" x="72" y="-230.3" font-family="Times,serif" font-size="14.00">+</text>
 </g>
-<!-- 140295241580216&#45;&gt;140295241576856 -->
-<g id="edge1" class="edge"><title>140295241580216&#45;&gt;140295241576856</title>
-<path fill="none" stroke="black" d="M92.7378,-288.765C88.9552,-278.958 84.0963,-266.361 80.0326,-255.825"/>
-<polygon fill="black" stroke="black" points="81.6604,-255.183 78.2282,-251.147 78.3949,-256.442 81.6604,-255.183"/>
+<!-- 140295241475968&#45;&#45;140295241477312 -->
+<g id="edge1" class="edge"><title>140295241475968&#45;&#45;140295241477312</title>
+<path fill="none" stroke="black" d="M92.7378,-288.765C88.3759,-277.456 82.5827,-262.437 78.2282,-251.147"/>
 </g>
-<!-- 140295241579376 -->
-<g id="node7" class="node"><title>140295241579376</title>
+<!-- 140295241476640 -->
+<g id="node7" class="node"><title>140295241476640</title>
 <ellipse fill="none" stroke="black" cx="126" cy="-234" rx="18" ry="18"/>
 <text text-anchor="middle" x="126" y="-230.3" font-family="Times,serif" font-size="14.00">*</text>
 </g>
-<!-- 140295241580216&#45;&gt;140295241579376 -->
-<g id="edge6" class="edge"><title>140295241580216&#45;&gt;140295241579376</title>
-<path fill="none" stroke="black" d="M105.262,-288.765C109.045,-278.958 113.904,-266.361 117.967,-255.825"/>
-<polygon fill="black" stroke="black" points="119.605,-256.442 119.772,-251.147 116.34,-255.183 119.605,-256.442"/>
+<!-- 140295241475968&#45;&#45;140295241476640 -->
+<g id="edge6" class="edge"><title>140295241475968&#45;&#45;140295241476640</title>
+<path fill="none" stroke="black" d="M105.262,-288.765C109.624,-277.456 115.417,-262.437 119.772,-251.147"/>
 </g>
-<!-- 140295241578816 -->
-<g id="node3" class="node"><title>140295241578816</title>
+<!-- 140295241474512 -->
+<g id="node3" class="node"><title>140295241474512</title>
 <ellipse fill="none" stroke="black" cx="18" cy="-162" rx="18" ry="18"/>
 <text text-anchor="middle" x="18" y="-158.3" font-family="Times,serif" font-size="14.00">a</text>
 </g>
-<!-- 140295241576856&#45;&gt;140295241578816 -->
-<g id="edge2" class="edge"><title>140295241576856&#45;&gt;140295241578816</title>
-<path fill="none" stroke="black" d="M61.3313,-219.17C52.8998,-208.241 41.0649,-192.899 31.8936,-181.01"/>
-<polygon fill="black" stroke="black" points="33.0862,-179.691 28.6465,-176.801 30.3149,-181.829 33.0862,-179.691"/>
+<!-- 140295241477312&#45;&#45;140295241474512 -->
+<g id="edge2" class="edge"><title>140295241477312&#45;&#45;140295241474512</title>
+<path fill="none" stroke="black" d="M61.3313,-219.17C51.8644,-206.898 38.1067,-189.064 28.6465,-176.801"/>
 </g>
-<!-- 140295241578368 -->
-<g id="node4" class="node"><title>140295241578368</title>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
 <ellipse fill="none" stroke="black" cx="72" cy="-162" rx="18" ry="18"/>
 <text text-anchor="middle" x="72" y="-158.3" font-family="Times,serif" font-size="14.00">*</text>
 </g>
-<!-- 140295241576856&#45;&gt;140295241578368 -->
-<g id="edge3" class="edge"><title>140295241576856&#45;&gt;140295241578368</title>
-<path fill="none" stroke="black" d="M72,-215.697C72,-206.457 72,-194.984 72,-185.105"/>
-<polygon fill="black" stroke="black" points="73.7501,-185.104 72,-180.104 70.2501,-185.104 73.7501,-185.104"/>
+<!-- 140295241477312&#45;&#45;140295241477816 -->
+<g id="edge3" class="edge"><title>140295241477312&#45;&#45;140295241477816</title>
+<path fill="none" stroke="black" d="M72,-215.697C72,-204.846 72,-190.917 72,-180.104"/>
 </g>
-<!-- 140295241579040 -->
-<g id="node5" class="node"><title>140295241579040</title>
+<!-- 140295241476136 -->
+<g id="node5" class="node"><title>140295241476136</title>
 <ellipse fill="none" stroke="black" cx="18" cy="-90" rx="18" ry="18"/>
 <text text-anchor="middle" x="18" y="-86.3" font-family="Times,serif" font-size="14.00">b</text>
 </g>
-<!-- 140295241578368&#45;&gt;140295241579040 -->
-<g id="edge4" class="edge"><title>140295241578368&#45;&gt;140295241579040</title>
-<path fill="none" stroke="black" d="M61.3313,-147.17C52.8998,-136.241 41.0649,-120.899 31.8936,-109.01"/>
-<polygon fill="black" stroke="black" points="33.0862,-107.691 28.6465,-104.801 30.3149,-109.829 33.0862,-107.691"/>
+<!-- 140295241477816&#45;&#45;140295241476136 -->
+<g id="edge4" class="edge"><title>140295241477816&#45;&#45;140295241476136</title>
+<path fill="none" stroke="black" d="M61.3313,-147.17C51.8644,-134.898 38.1067,-117.064 28.6465,-104.801"/>
 </g>
-<!-- 140295241579880 -->
-<g id="node6" class="node"><title>140295241579880</title>
+<!-- 140295241476192 -->
+<g id="node6" class="node"><title>140295241476192</title>
 <ellipse fill="none" stroke="black" cx="72" cy="-90" rx="18" ry="18"/>
 <text text-anchor="middle" x="72" y="-86.3" font-family="Times,serif" font-size="14.00">c</text>
 </g>
-<!-- 140295241578368&#45;&gt;140295241579880 -->
-<g id="edge5" class="edge"><title>140295241578368&#45;&gt;140295241579880</title>
-<path fill="none" stroke="black" d="M72,-143.697C72,-134.457 72,-122.984 72,-113.105"/>
-<polygon fill="black" stroke="black" points="73.7501,-113.104 72,-108.104 70.2501,-113.104 73.7501,-113.104"/>
+<!-- 140295241477816&#45;&#45;140295241476192 -->
+<g id="edge5" class="edge"><title>140295241477816&#45;&#45;140295241476192</title>
+<path fill="none" stroke="black" d="M72,-143.697C72,-132.846 72,-118.917 72,-108.104"/>
 </g>
-<!-- 140295241577920 -->
-<g id="node8" class="node"><title>140295241577920</title>
+<!-- 140295241477200 -->
+<g id="node8" class="node"><title>140295241477200</title>
 <ellipse fill="none" stroke="black" cx="126" cy="-162" rx="18" ry="18"/>
 <text text-anchor="middle" x="126" y="-158.3" font-family="Times,serif" font-size="14.00">+</text>
 </g>
-<!-- 140295241579376&#45;&gt;140295241577920 -->
-<g id="edge7" class="edge"><title>140295241579376&#45;&gt;140295241577920</title>
-<path fill="none" stroke="black" d="M126,-215.697C126,-206.457 126,-194.984 126,-185.105"/>
-<polygon fill="black" stroke="black" points="127.75,-185.104 126,-180.104 124.25,-185.104 127.75,-185.104"/>
+<!-- 140295241476640&#45;&#45;140295241477200 -->
+<g id="edge7" class="edge"><title>140295241476640&#45;&#45;140295241477200</title>
+<path fill="none" stroke="black" d="M126,-215.697C126,-204.846 126,-190.917 126,-180.104"/>
 </g>
-<!-- 140295241577808 -->
-<g id="node13" class="node"><title>140295241577808</title>
+<!-- 140295241477760 -->
+<g id="node13" class="node"><title>140295241477760</title>
 <ellipse fill="none" stroke="black" cx="180" cy="-162" rx="18" ry="18"/>
 <text text-anchor="middle" x="180" y="-158.3" font-family="Times,serif" font-size="14.00">g</text>
 </g>
-<!-- 140295241579376&#45;&gt;140295241577808 -->
-<g id="edge12" class="edge"><title>140295241579376&#45;&gt;140295241577808</title>
-<path fill="none" stroke="black" d="M136.669,-219.17C145.1,-208.241 156.935,-192.899 166.106,-181.01"/>
-<polygon fill="black" stroke="black" points="167.685,-181.829 169.354,-176.801 164.914,-179.691 167.685,-181.829"/>
+<!-- 140295241476640&#45;&#45;140295241477760 -->
+<g id="edge12" class="edge"><title>140295241476640&#45;&#45;140295241477760</title>
+<path fill="none" stroke="black" d="M136.669,-219.17C146.136,-206.898 159.893,-189.064 169.354,-176.801"/>
 </g>
-<!-- 140295241578984 -->
-<g id="node9" class="node"><title>140295241578984</title>
+<!-- 140295241476584 -->
+<g id="node9" class="node"><title>140295241476584</title>
 <ellipse fill="none" stroke="black" cx="126" cy="-90" rx="18" ry="18"/>
 <text text-anchor="middle" x="126" y="-86.3" font-family="Times,serif" font-size="14.00">*</text>
 </g>
-<!-- 140295241577920&#45;&gt;140295241578984 -->
-<g id="edge8" class="edge"><title>140295241577920&#45;&gt;140295241578984</title>
-<path fill="none" stroke="black" d="M126,-143.697C126,-134.457 126,-122.984 126,-113.105"/>
-<polygon fill="black" stroke="black" points="127.75,-113.104 126,-108.104 124.25,-113.104 127.75,-113.104"/>
+<!-- 140295241477200&#45;&#45;140295241476584 -->
+<g id="edge8" class="edge"><title>140295241477200&#45;&#45;140295241476584</title>
+<path fill="none" stroke="black" d="M126,-143.697C126,-132.846 126,-118.917 126,-108.104"/>
 </g>
-<!-- 140295241580328 -->
-<g id="node12" class="node"><title>140295241580328</title>
+<!-- 140295241475632 -->
+<g id="node12" class="node"><title>140295241475632</title>
 <ellipse fill="none" stroke="black" cx="180" cy="-90" rx="18" ry="18"/>
 <text text-anchor="middle" x="180" y="-86.3" font-family="Times,serif" font-size="14.00">f</text>
 </g>
-<!-- 140295241577920&#45;&gt;140295241580328 -->
-<g id="edge11" class="edge"><title>140295241577920&#45;&gt;140295241580328</title>
-<path fill="none" stroke="black" d="M136.669,-147.17C145.1,-136.241 156.935,-120.899 166.106,-109.01"/>
-<polygon fill="black" stroke="black" points="167.685,-109.829 169.354,-104.801 164.914,-107.691 167.685,-109.829"/>
+<!-- 140295241477200&#45;&#45;140295241475632 -->
+<g id="edge11" class="edge"><title>140295241477200&#45;&#45;140295241475632</title>
+<path fill="none" stroke="black" d="M136.669,-147.17C146.136,-134.898 159.893,-117.064 169.354,-104.801"/>
 </g>
-<!-- 140295241580272 -->
-<g id="node10" class="node"><title>140295241580272</title>
+<!-- 140295241478040 -->
+<g id="node10" class="node"><title>140295241478040</title>
 <ellipse fill="none" stroke="black" cx="99" cy="-18" rx="18" ry="18"/>
 <text text-anchor="middle" x="99" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
 </g>
-<!-- 140295241578984&#45;&gt;140295241580272 -->
-<g id="edge9" class="edge"><title>140295241578984&#45;&gt;140295241580272</title>
-<path fill="none" stroke="black" d="M119.738,-72.7646C115.955,-62.9579 111.096,-50.3607 107.033,-39.8254"/>
-<polygon fill="black" stroke="black" points="108.66,-39.1825 105.228,-35.1473 105.395,-40.4421 108.66,-39.1825"/>
+<!-- 140295241476584&#45;&#45;140295241478040 -->
+<g id="edge9" class="edge"><title>140295241476584&#45;&#45;140295241478040</title>
+<path fill="none" stroke="black" d="M119.738,-72.7646C115.376,-61.456 109.583,-46.4367 105.228,-35.1473"/>
 </g>
-<!-- 140295241579768 -->
-<g id="node11" class="node"><title>140295241579768</title>
+<!-- 140295241477984 -->
+<g id="node11" class="node"><title>140295241477984</title>
 <ellipse fill="none" stroke="black" cx="153" cy="-18" rx="18" ry="18"/>
 <text text-anchor="middle" x="153" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
 </g>
-<!-- 140295241578984&#45;&gt;140295241579768 -->
-<g id="edge10" class="edge"><title>140295241578984&#45;&gt;140295241579768</title>
-<path fill="none" stroke="black" d="M132.262,-72.7646C136.045,-62.9579 140.904,-50.3607 144.967,-39.8254"/>
-<polygon fill="black" stroke="black" points="146.605,-40.4421 146.772,-35.1473 143.34,-39.1825 146.605,-40.4421"/>
+<!-- 140295241476584&#45;&#45;140295241477984 -->
+<g id="edge10" class="edge"><title>140295241476584&#45;&#45;140295241477984</title>
+<path fill="none" stroke="black" d="M132.262,-72.7646C136.624,-61.456 142.417,-46.4367 146.772,-35.1473"/>
 </g>
 </g>
 </svg>
@@ -583,18 +580,49 @@ a.anchor-link {
 </div>
 
 </div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#36882;&#24402;&#36941;&#21382;">&#36882;&#24402;&#36941;&#21382;<a class="anchor-link" href="#&#36882;&#24402;&#36941;&#21382;">&#182;</a></h3><ol>
+<li>前序</li>
+<li>中序</li>
+<li>后序</li>
+</ol>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[130]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recursive: &quot;</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Pre order:</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">pre_order_recursive</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">In order:</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">in_order_recursive</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Post order:</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">post_order_recursive</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">graphviz</span> <span class="k">import</span> <span class="n">Digraph</span>
+
+<span class="k">def</span> <span class="nf">mk_graph</span><span class="p">():</span>
+    <span class="n">graph</span> <span class="o">=</span> <span class="n">Digraph</span><span class="p">(</span><span class="n">node_attr</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="s1">&#39;circle&#39;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">graph</span>
+
+<span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="n">graph</span><span class="p">):</span>
+    <span class="k">return</span> <span class="k">lambda</span> <span class="n">node</span><span class="p">:</span> <span class="n">graph</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">_nid</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;递归前序遍历&quot;</span><span class="p">)</span>
+<span class="n">pre_order_graph</span> <span class="o">=</span> <span class="n">mk_graph</span><span class="p">()</span>
+<span class="n">tree</span><span class="o">.</span><span class="n">pre_order_recursive</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">visit</span><span class="p">(</span><span class="n">pre_order_graph</span><span class="p">))</span>
+<span class="n">pre_order_graph</span>
 </pre></div>
 
 </div>
@@ -607,16 +635,809 @@ a.anchor-link {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Recursive: 
-Pre order:	+ + a * b c * + * d e f g 
-In order:	a + b * c + d * e + f * g 
-Post order:	a b c * + d e * f + g * + </pre>
+<pre>递归前序遍历
+</pre>
 </div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[143]:</div>
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="44pt"
+ viewBox="0.00 0.00 692.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 688,-40 688,4 -4,4"/>
+<!-- 140295241475968 -->
+<g id="node1" class="node"><title>140295241475968</title>
+<ellipse fill="none" stroke="black" cx="18" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241477312 -->
+<g id="node2" class="node"><title>140295241477312</title>
+<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241474512 -->
+<g id="node3" class="node"><title>140295241474512</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
+<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241476136 -->
+<g id="node5" class="node"><title>140295241476136</title>
+<ellipse fill="none" stroke="black" cx="234" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- 140295241476192 -->
+<g id="node6" class="node"><title>140295241476192</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- 140295241476640 -->
+<g id="node7" class="node"><title>140295241476640</title>
+<ellipse fill="none" stroke="black" cx="342" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477200 -->
+<g id="node8" class="node"><title>140295241477200</title>
+<ellipse fill="none" stroke="black" cx="396" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="396" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241476584 -->
+<g id="node9" class="node"><title>140295241476584</title>
+<ellipse fill="none" stroke="black" cx="450" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="450" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241478040 -->
+<g id="node10" class="node"><title>140295241478040</title>
+<ellipse fill="none" stroke="black" cx="504" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="504" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- 140295241477984 -->
+<g id="node11" class="node"><title>140295241477984</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="558" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- 140295241475632 -->
+<g id="node12" class="node"><title>140295241475632</title>
+<ellipse fill="none" stroke="black" cx="612" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="612" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- 140295241477760 -->
+<g id="node13" class="node"><title>140295241477760</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="666" y="-14.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+</g>
+</svg>
+
+</div>
+
 </div>
 
 </div>
 </div>
 
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;递归中序遍历&quot;</span><span class="p">)</span>
+<span class="n">in_order_graph</span> <span class="o">=</span> <span class="n">mk_graph</span><span class="p">()</span>
+<span class="n">tree</span><span class="o">.</span><span class="n">in_order_recursive</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">visit</span><span class="p">(</span><span class="n">in_order_graph</span><span class="p">))</span>
+<span class="n">in_order_graph</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>递归中序遍历
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[144]:</div>
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="44pt"
+ viewBox="0.00 0.00 692.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 688,-40 688,4 -4,4"/>
+<!-- 140295241474512 -->
+<g id="node1" class="node"><title>140295241474512</title>
+<ellipse fill="none" stroke="black" cx="18" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- 140295241477312 -->
+<g id="node2" class="node"><title>140295241477312</title>
+<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241476136 -->
+<g id="node3" class="node"><title>140295241476136</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
+<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241476192 -->
+<g id="node5" class="node"><title>140295241476192</title>
+<ellipse fill="none" stroke="black" cx="234" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- 140295241475968 -->
+<g id="node6" class="node"><title>140295241475968</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241478040 -->
+<g id="node7" class="node"><title>140295241478040</title>
+<ellipse fill="none" stroke="black" cx="342" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- 140295241476584 -->
+<g id="node8" class="node"><title>140295241476584</title>
+<ellipse fill="none" stroke="black" cx="396" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="396" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477984 -->
+<g id="node9" class="node"><title>140295241477984</title>
+<ellipse fill="none" stroke="black" cx="450" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="450" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- 140295241477200 -->
+<g id="node10" class="node"><title>140295241477200</title>
+<ellipse fill="none" stroke="black" cx="504" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="504" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241475632 -->
+<g id="node11" class="node"><title>140295241475632</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="558" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- 140295241476640 -->
+<g id="node12" class="node"><title>140295241476640</title>
+<ellipse fill="none" stroke="black" cx="612" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="612" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477760 -->
+<g id="node13" class="node"><title>140295241477760</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="666" y="-14.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;递归后序遍历&quot;</span><span class="p">)</span>
+<span class="n">post_order_graph</span> <span class="o">=</span> <span class="n">mk_graph</span><span class="p">()</span>
+<span class="n">tree</span><span class="o">.</span><span class="n">post_order_recursive</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">visit</span><span class="p">(</span><span class="n">post_order_graph</span><span class="p">))</span>
+<span class="n">post_order_graph</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>递归后序遍历
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[145]:</div>
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="44pt"
+ viewBox="0.00 0.00 692.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 688,-40 688,4 -4,4"/>
+<!-- 140295241474512 -->
+<g id="node1" class="node"><title>140295241474512</title>
+<ellipse fill="none" stroke="black" cx="18" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- 140295241476136 -->
+<g id="node2" class="node"><title>140295241476136</title>
+<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- 140295241476192 -->
+<g id="node3" class="node"><title>140295241476192</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
+<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477312 -->
+<g id="node5" class="node"><title>140295241477312</title>
+<ellipse fill="none" stroke="black" cx="234" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241478040 -->
+<g id="node6" class="node"><title>140295241478040</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- 140295241477984 -->
+<g id="node7" class="node"><title>140295241477984</title>
+<ellipse fill="none" stroke="black" cx="342" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- 140295241476584 -->
+<g id="node8" class="node"><title>140295241476584</title>
+<ellipse fill="none" stroke="black" cx="396" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="396" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241475632 -->
+<g id="node9" class="node"><title>140295241475632</title>
+<ellipse fill="none" stroke="black" cx="450" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="450" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- 140295241477200 -->
+<g id="node10" class="node"><title>140295241477200</title>
+<ellipse fill="none" stroke="black" cx="504" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="504" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241477760 -->
+<g id="node11" class="node"><title>140295241477760</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="558" y="-14.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- 140295241476640 -->
+<g id="node12" class="node"><title>140295241476640</title>
+<ellipse fill="none" stroke="black" cx="612" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="612" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241475968 -->
+<g id="node13" class="node"><title>140295241475968</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="666" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#38750;&#36882;&#24402;&#36941;&#21382;">&#38750;&#36882;&#24402;&#36941;&#21382;<a class="anchor-link" href="#&#38750;&#36882;&#24402;&#36941;&#21382;">&#182;</a></h3>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1. 前序</strong></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">pre_order_iterative</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">visit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">root</span>
+    <span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="n">cursor</span><span class="p">]</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
+        <span class="k">while</span> <span class="n">cursor</span><span class="p">:</span>
+            <span class="n">visit</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">left</span>
+            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+        <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># pop None</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">right</span>
+            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>2. 中序</strong></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">in_order_iterative</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">visit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">root</span>
+    <span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="n">cursor</span><span class="p">]</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
+        <span class="k">while</span> <span class="n">cursor</span><span class="p">:</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">left</span>
+            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+        <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="n">visit</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">right</span>
+            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>3. 后序</strong></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">post_order_iterative</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">visit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">root</span>
+    <span class="n">last</span>   <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">stack</span>  <span class="o">=</span> <span class="p">[</span><span class="n">cursor</span><span class="p">]</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
+        <span class="k">while</span> <span class="n">cursor</span> <span class="ow">and</span> <span class="n">cursor</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">last</span><span class="p">:</span>
+            <span class="n">last</span>   <span class="o">=</span> <span class="n">cursor</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">left</span>
+            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+        <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
+            <span class="n">cursor</span> <span class="o">=</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">right</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">cursor</span><span class="o">.</span><span class="n">right</span> <span class="ow">is</span> <span class="n">last</span><span class="p">:</span>
+                <span class="n">visit</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+                <span class="n">last</span> <span class="o">=</span> <span class="n">cursor</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">last</span> <span class="o">=</span> <span class="n">cursor</span>
+                <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">right</span>
+                <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cursor</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;非递归前序遍历&quot;</span><span class="p">)</span>
+<span class="n">pre_order_graph</span> <span class="o">=</span> <span class="n">mk_graph</span><span class="p">()</span>
+<span class="n">pre_order_iterative</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">visit</span><span class="p">(</span><span class="n">pre_order_graph</span><span class="p">))</span>
+<span class="n">pre_order_graph</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>非递归前序遍历
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[140]:</div>
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="44pt"
+ viewBox="0.00 0.00 692.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 688,-40 688,4 -4,4"/>
+<!-- 140295241475968 -->
+<g id="node1" class="node"><title>140295241475968</title>
+<ellipse fill="none" stroke="black" cx="18" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241477312 -->
+<g id="node2" class="node"><title>140295241477312</title>
+<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241474512 -->
+<g id="node3" class="node"><title>140295241474512</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
+<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241476136 -->
+<g id="node5" class="node"><title>140295241476136</title>
+<ellipse fill="none" stroke="black" cx="234" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- 140295241476192 -->
+<g id="node6" class="node"><title>140295241476192</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- 140295241476640 -->
+<g id="node7" class="node"><title>140295241476640</title>
+<ellipse fill="none" stroke="black" cx="342" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477200 -->
+<g id="node8" class="node"><title>140295241477200</title>
+<ellipse fill="none" stroke="black" cx="396" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="396" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241476584 -->
+<g id="node9" class="node"><title>140295241476584</title>
+<ellipse fill="none" stroke="black" cx="450" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="450" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241478040 -->
+<g id="node10" class="node"><title>140295241478040</title>
+<ellipse fill="none" stroke="black" cx="504" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="504" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- 140295241477984 -->
+<g id="node11" class="node"><title>140295241477984</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="558" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- 140295241475632 -->
+<g id="node12" class="node"><title>140295241475632</title>
+<ellipse fill="none" stroke="black" cx="612" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="612" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- 140295241477760 -->
+<g id="node13" class="node"><title>140295241477760</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="666" y="-14.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;非递归中序遍历&quot;</span><span class="p">)</span>
+<span class="n">in_order_graph</span> <span class="o">=</span> <span class="n">mk_graph</span><span class="p">()</span>
+<span class="n">in_order_iterative</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">visit</span><span class="p">(</span><span class="n">in_order_graph</span><span class="p">))</span>
+<span class="n">in_order_graph</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>非递归中序遍历
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[141]:</div>
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="44pt"
+ viewBox="0.00 0.00 692.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 688,-40 688,4 -4,4"/>
+<!-- 140295241474512 -->
+<g id="node1" class="node"><title>140295241474512</title>
+<ellipse fill="none" stroke="black" cx="18" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- 140295241477312 -->
+<g id="node2" class="node"><title>140295241477312</title>
+<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241476136 -->
+<g id="node3" class="node"><title>140295241476136</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
+<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241476192 -->
+<g id="node5" class="node"><title>140295241476192</title>
+<ellipse fill="none" stroke="black" cx="234" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- 140295241475968 -->
+<g id="node6" class="node"><title>140295241475968</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241478040 -->
+<g id="node7" class="node"><title>140295241478040</title>
+<ellipse fill="none" stroke="black" cx="342" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- 140295241476584 -->
+<g id="node8" class="node"><title>140295241476584</title>
+<ellipse fill="none" stroke="black" cx="396" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="396" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477984 -->
+<g id="node9" class="node"><title>140295241477984</title>
+<ellipse fill="none" stroke="black" cx="450" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="450" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- 140295241477200 -->
+<g id="node10" class="node"><title>140295241477200</title>
+<ellipse fill="none" stroke="black" cx="504" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="504" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241475632 -->
+<g id="node11" class="node"><title>140295241475632</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="558" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- 140295241476640 -->
+<g id="node12" class="node"><title>140295241476640</title>
+<ellipse fill="none" stroke="black" cx="612" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="612" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477760 -->
+<g id="node13" class="node"><title>140295241477760</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="666" y="-14.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;非递归后序遍历&quot;</span><span class="p">)</span>
+<span class="n">post_order_graph</span> <span class="o">=</span> <span class="n">mk_graph</span><span class="p">()</span>
+<span class="n">post_order_iterative</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">visit</span><span class="p">(</span><span class="n">post_order_graph</span><span class="p">))</span>
+<span class="n">post_order_graph</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>非递归后序遍历
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[142]:</div>
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="44pt"
+ viewBox="0.00 0.00 692.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 688,-40 688,4 -4,4"/>
+<!-- 140295241474512 -->
+<g id="node1" class="node"><title>140295241474512</title>
+<ellipse fill="none" stroke="black" cx="18" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="18" y="-14.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- 140295241476136 -->
+<g id="node2" class="node"><title>140295241476136</title>
+<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- 140295241476192 -->
+<g id="node3" class="node"><title>140295241476192</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- 140295241477816 -->
+<g id="node4" class="node"><title>140295241477816</title>
+<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="180" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241477312 -->
+<g id="node5" class="node"><title>140295241477312</title>
+<ellipse fill="none" stroke="black" cx="234" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="234" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241478040 -->
+<g id="node6" class="node"><title>140295241478040</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="288" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- 140295241477984 -->
+<g id="node7" class="node"><title>140295241477984</title>
+<ellipse fill="none" stroke="black" cx="342" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="342" y="-14.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- 140295241476584 -->
+<g id="node8" class="node"><title>140295241476584</title>
+<ellipse fill="none" stroke="black" cx="396" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="396" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241475632 -->
+<g id="node9" class="node"><title>140295241475632</title>
+<ellipse fill="none" stroke="black" cx="450" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="450" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- 140295241477200 -->
+<g id="node10" class="node"><title>140295241477200</title>
+<ellipse fill="none" stroke="black" cx="504" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="504" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+<!-- 140295241477760 -->
+<g id="node11" class="node"><title>140295241477760</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="558" y="-14.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- 140295241476640 -->
+<g id="node12" class="node"><title>140295241476640</title>
+<ellipse fill="none" stroke="black" cx="612" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="612" y="-14.3" font-family="Times,serif" font-size="14.00">*</text>
+</g>
+<!-- 140295241475968 -->
+<g id="node13" class="node"><title>140295241475968</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-18" rx="18" ry="18"/>
+<text text-anchor="middle" x="666" y="-14.3" font-family="Times,serif" font-size="14.00">+</text>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#21518;&#32487;">&#21518;&#32487;<a class="anchor-link" href="#&#21518;&#32487;">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
